@@ -59,3 +59,4 @@ router.post('/courses', bodyParser.json(), (req, res)=> {
 router.get('/*', (req, res)=> {
     res.status(404).sendFile(path.join(__dirname, 'views', '404.html'));
 });
+
